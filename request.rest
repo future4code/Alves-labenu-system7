@@ -1,0 +1,48 @@
+POST http://localhost:3003/criar/turma
+Content-Type: application/json
+
+
+
+###
+
+GET http://localhost:3003/buscar/turmas/ativas
+
+###
+
+POST http://localhost:3003/muda/turma/modulo
+Content-Type: application/json
+
+
+###
+
+POST http://localhost:3003/criar/estudante
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:3003/estudante/
+
+###
+
+POST http://localhost:3003/muda/estudante/turma
+Content-Type: application/json
+
+
+
+###
+
+POST http://localhost:3003/criar/docente
+Content-Type: application/json
+
+
+
+###
+
+GET http://localhost:3003/buscar/docentes
+
+###
+
+POST http://localhost:3003/muda/docente/turma
+Content-Type: application/json
+
