@@ -1,7 +1,9 @@
 POST http://localhost:3003/criar/turma
 Content-Type: application/json
 
-
+{
+    "nome":"cruz"
+}
 
 ###
 
@@ -12,6 +14,10 @@ GET http://localhost:3003/buscar/turmas/ativas
 POST http://localhost:3003/muda/turma/modulo
 Content-Type: application/json
 
+{
+    "IdTurma":"001",
+    "modulo":"0"
+}
 
 ###
 
