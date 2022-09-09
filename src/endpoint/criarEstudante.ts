@@ -24,8 +24,7 @@ const criarEstudante = async (req: Request, res: Response) => {
 	    email,
         dataNascimento ,
         turmaId
-    }
-    console.log(estudante)
+    }    
     await insertEstudante(estudante)
 
     res.status(201).send("Estudante criado com sucesso!")

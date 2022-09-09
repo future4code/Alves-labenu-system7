@@ -42,7 +42,7 @@ Content-Type: application/json
 
 {
     "IdEstudante":"02",
-    "idTurma":"3"
+    "idTurma":"1"
 }
 
 ###
@@ -56,6 +56,7 @@ Content-Type: application/json
     "dataNascimento": "2003-04-15",
     "turmaId": "001"
 }
+
 
 ###
 
