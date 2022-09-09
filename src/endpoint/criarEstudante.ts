@@ -27,7 +27,7 @@ const criarEstudante = async (req: Request, res: Response) => {
     }    
     await insertEstudante(estudante)
 
-    res.status(201).send("Estudante cirado com sucesso!")
+    res.status(201).send("Estudante criado com sucesso!")
   } catch (error: any) {
     res.status(500).send({ message: error.message });
   }
