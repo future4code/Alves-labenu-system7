@@ -16,7 +16,7 @@ import { atualizarEstudante, buscaTurma } from "../data/turmaDatabase";
             throw new Error(`Turma com o id ${idTurma} não existe`)
         }
 
-        const estudanteExiste = await selectEstudante("", IdEstudante)
+        const estudanteExiste = await selectEstudante(IdEstudante)
 
         if (!estudanteExiste) {
             res.statusCode = 404
