@@ -15,12 +15,12 @@ export const insertEstudante = async(estudante: Estudante): Promise<void> => {
 }
 
 
-export const selectEstudante = async(nome: string, idEstudante?: string): Promise<Estudante | undefined> => {
+export const selectEstudante = async(search: string): Promise<Estudante | undefined> => {
     
     const [result] = await connection("estudante") 
     .select("*")   
-    .where({nome})
-    .orWhere({id: idEstudante})
+    .where({nome: search})
+    .orWhere({id: search})
 
     if (result) {
         const tipoEstudante = tipageEstudante(result)
