@@ -13,10 +13,10 @@ GET http://localhost:3003/buscar/turmas/ativas
 
 POST http://localhost:3003/muda/turma/modulo
 Content-Type: application/json
-
+ 
 {
-    "IdTurma":"001",
-    "modulo":"0"
+    "IdTurma":"2",
+    "modulo":"3"
 }
 
 ###
@@ -24,17 +24,26 @@ Content-Type: application/json
 POST http://localhost:3003/criar/estudante
 Content-Type: application/json
 
+{
+    "nome": "Mario",
+	"email": "mario@gmail.com",
+    "dataNascimento": "1981-07-09",
+    "turmaId": "1"
+}
 
 ###
 
-GET http://localhost:3003/estudante/
+GET http://localhost:3003/estudante/maria
 
 ###
 
 POST http://localhost:3003/muda/estudante/turma
 Content-Type: application/json
 
-
+{
+    "IdEstudante":"02",
+    "idTurma":"3"
+}
 
 ###
 
