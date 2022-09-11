@@ -2,7 +2,7 @@ POST http://localhost:3003/criar/turma
 Content-Type: application/json
 
 {
-    "nome":"cruz"
+    "nome":"Jacs"
 }
 
 ###
@@ -15,8 +15,8 @@ POST http://localhost:3003/muda/turma/modulo
 Content-Type: application/json
  
 {
-    "IdTurma":"2",
-    "modulo":"3"
+    "turmaId":"1",
+    "modulo":"1"
 }
 
 ###
@@ -25,15 +25,15 @@ POST http://localhost:3003/criar/estudante
 Content-Type: application/json
 
 {
-    "nome": "Mario",
-	"email": "mario@gmail.com",
-    "dataNascimento": "1981-07-09",
-    "turmaId": "1"
+    "nome": "Lulu",
+	"email": "lulu@gmail.com",
+    "dataNascimento": "20/08/2000",
+    "turmaId": "2"
 }
 
 ###
 
-GET http://localhost:3003/estudante/maria
+GET http://localhost:3003/estudante/lulu
 
 ###
 
@@ -42,7 +42,7 @@ Content-Type: application/json
 
 {
     "IdEstudante":"02",
-    "idTurma":"1"
+    "turmaId":"3"
 }
 
 ###
@@ -51,10 +51,10 @@ POST http://localhost:3003/criar/docente
 Content-Type: application/json
 
 {
-    "nome": "Thiago",
-	"email": "thiago@gmail.com",
-    "dataNascimento": "2003-04-15",
-    "turmaId": "001"
+    "nome": "Timão",
+	"email": "timao@gmail.com",
+    "dataNascimento": "2000/02/10",
+    "turmaId": "1662744758401"
 }
 
 
@@ -68,7 +68,7 @@ POST http://localhost:3003/muda/docente/turma
 Content-Type: application/json
 
 {
-    "IdDocente":"1662730733851",
-    "idTurma":"001"
+    "IdDocente":"003",
+    "turmaId":"1"
 }
 
