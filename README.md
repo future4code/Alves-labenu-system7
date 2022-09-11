@@ -31,3 +31,9 @@ As funcionalidades básicas são:
 → Adicionar docente na turma;
 
 → Pegar a idade de algum estudante a partir do id
+
+Link do deploy:
+https://labenusistem.herokuapp.com/
+
+Link da documentação da API:
+https://documenter.getpostman.com/view/21554008/2s7YYoBSAS
